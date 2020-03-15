@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HW1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container2 flex-between">
+            <div class="logo">
+                   <h3 class="word">Avengers</h3>
+            </div>
+            <ul class="flex-between" id ="topMenu">
+                <li><p class="word">Story</p></li>
+                <li><p class="word">Charcters</p></li>
+                <li><p class="word">Gallery</p></li>
+                <li><p class="word">Posters</p></li>
+                <li><img src="assets/media/sign-092a.png" class="logo"/> </li>
+                <!-- img 不用/結束 -->
+
+            </ul>
+            <button class="ham" onclick="toggleMenu()">☰</button>
+        </div>
+    </nav>
+    <header id="home">
+        <div class="row">
+            <div class="container2 col-6">
+                <div class="ml">
+                    <h1 class="title">Black</h1>
+                    <h1 class="title">Panther</h1>
+                        <div class="intro mtb-4">
+                            <p class="mb-4">HEHEHEHE</p>
+                            <p class="mb-4">HEHEHEHEDFDF</p>
+                            <p class="mb-4">HEHEHEHDSFFFSFSFSE</p>
+                            <p class="btn-intro">More</p>
+                            </div>
+              
+                </div>
+            </div>
+            <div class="col-5">
+        
+            </div>
+            <div class="col-1">
+               
+                <p class="word mr">01</p>
+                <p class="word mr">02</p>
+                <p class="word mr">03</p> 
+         
+            </div>
+        </div>
+
+
+    </header>
+   
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("topMenu");
+            if (x.className === "flex-between") {
+                x.className += " menu--active";
+            } else {
+                x.className = "flex-between";
+            }
+        }
+    </script>
+</body>
+
+</html>
